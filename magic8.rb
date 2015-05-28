@@ -8,11 +8,18 @@ class MagicEight
     @question = gets.chomp.upcase
   end
 
+  def goodbye_message
+    puts "Goodbye"
+    return 0
+  end
+
   def comp_responses
     goodbye_message if @question == 'QUIT'
-    response = ["yes","maybe","no certainly not","never"]
-    number = rand(0..3)
-    puts response[number]
+    if @question != 'QUIT'
+      response = ["yes","maybe","no certainly not","never"]
+      number = rand(0..3)
+      puts response[number]
+    end
   end
 
   def play

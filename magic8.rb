@@ -21,6 +21,10 @@ class MagicEight
       comp_responses
     end until @question == 'QUIT'
   end
+
+  def add_answers
+    puts 'this adds more answers'
+  end
   
 end
 

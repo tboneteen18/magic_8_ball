@@ -1,1 +1,3 @@
-Hello World
+class MagicEight
+
+end
